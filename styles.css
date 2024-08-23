@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #c21087; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto do cabeçalho */
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    max-height: 50px; /* Ajuste a altura máxima do logotipo */
+    width: auto; /* Mantém a proporção da largura */
+    margin-right: 1rem; /* Espaçamento entre o logo e o texto */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #ffffff; /* Cor dos links de navegação */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #c21087; /* Cor de fundo ao passar o mouse */
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    color: #c21087;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+section blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #c21087;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-style: italic;
+}
+
+footer {
+    background-color: #c21087; /* Cor de fundo do rodapé */
+    color: #ecf0f1; /* Cor do texto do rodapé */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: #ecf0f1; /* Cor dos links do rodapé */
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #c21087; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #c21087; /* Cor de fundo ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+}
